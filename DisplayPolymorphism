@@ -1,0 +1,24 @@
+//method overloading
+public class Bipin
+{
+    void hello()
+    {
+        System.out.println("Hello there");
+    }
+    void hello(String name)
+    {
+        System.out.println("Hello there my name is "+name);
+    }
+    void hello(String name, int age)
+    {
+        System.out.println("Hello there my name is "+name+ " Age is "+age);
+    }
+    public static void main(String args[])
+    {
+        Bipin b1=new Bipin();
+        b1.hello();
+        b1.hello("Bipin Karki");
+        b1.hello("Bipin Karki",21);
+        
+    }
+}
