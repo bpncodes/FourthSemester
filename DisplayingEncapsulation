@@ -1,0 +1,42 @@
+public class Animal
+{
+    private String name;
+    private Double weight;
+    private int legs;
+    void setName(String name)
+    {
+        this.name=name;
+    }
+    void setWeight(Double weight)
+    {
+        this.weight=weight;
+    }
+    void setLegs(int legs)
+    {
+        this.legs=legs;
+    }
+    
+    String getName()
+    {
+        return name;
+    }
+    Double getWeight()
+    {
+        return weight;
+    }
+    int getLegs()
+    {
+        return legs;
+    }
+    public static void main(String args[])
+    {
+        Animal cat=new Animal();
+        cat.setName("cat");
+        cat.setWeight(10.2);
+        cat.setLegs(4);
+        System.out.println("The name is "+ cat.name);
+        System.out.println("The weight is "+ cat.weight );
+        System.out.println("The legs are "+ cat.legs );
+        
+    }
+}
