@@ -22,3 +22,26 @@ public class Bipin
         
     }
 }
+//method overriding
+class Bipin
+{
+    void hello(String name, int age)
+    {
+        System.out.println("Hello there my name is "+name+ " Age is "+age);
+    }
+    
+}
+public class karki extends Bipin
+{   
+    void hello()
+    {
+        System.out.print("Just hello");
+    }
+    public static void main(String args[])
+    {
+        karki b1=new karki();
+        b1.hello("Bipin Karki",21);
+        b1.hello();
+        
+    }
+}
