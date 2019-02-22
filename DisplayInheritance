@@ -1,0 +1,22 @@
+class Animal
+{
+    public String name;
+    void setName(String name)
+    {
+         this.name=name;
+    }
+    String getName()
+    {
+        return name;
+    }
+    
+}
+public class Cat extends Animal
+{   
+    public static void main(String args[])
+    {
+    Cat cat=new Cat();
+    cat.setName("billy");
+    System.out.print("The cat is " + cat.getName());
+    }
+}
